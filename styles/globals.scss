@@ -1,16 +1,15 @@
+@use 'colors';
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Nunito';
+  background-color: colors.$colorBackground;
+  color: colors.$colorText;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+.container {
+  background-color: colors.$colorBase;
+  margin: 0 10% 0;
 }
