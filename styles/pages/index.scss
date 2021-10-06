@@ -1,0 +1,7 @@
+@use 'colors';
+
+.indexPage {
+  span {
+    color: colors.$colorPrimary;
+  }
+}
