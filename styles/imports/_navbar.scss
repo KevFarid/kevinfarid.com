@@ -34,20 +34,20 @@
 
   :link, :visited, :active {
     text-decoration:none;
-    color: colors.$colorText;
+    color: colors.$textColor;
   }
 
   .cv {
-    background-color: colors.$colorSupplementary;
+    background-color: colors.$secondaryColor;
     cursor: pointer;
   }
 
   :hover {
-    background-color: colors.$colorHover;
+    background-color: colors.$hoverColor;
     cursor: pointer;
   }
 
   .select {
-    background: colors.$colorSecondary;
+    background: colors.$complementaryColor;
   }
 }

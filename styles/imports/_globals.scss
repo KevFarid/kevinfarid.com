@@ -5,15 +5,19 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Nunito';
-  background-color: colors.$colorBackground;
-  color: colors.$colorText;
+  background-color: colors.$backgroundColor;
+  color: colors.$textColor;
 }
 
 .container {
-  background-color: colors.$colorBase;
+  background-color: colors.$baseColor;
   margin: 0 10% 0;
 }
 
 .round {
   border-radius: 100%;
+}
+
+.text-primary-color {
+  color: colors.$primaryColor;
 }
