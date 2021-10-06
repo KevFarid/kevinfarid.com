@@ -32,6 +32,11 @@
     margin-right: 0.4375rem;
   }
 
+  :link, :visited, :active {
+    text-decoration:none;
+    color: colors.$colorText;
+  }
+
   .cv {
     background-color: colors.$colorSupplementary;
     cursor: pointer;

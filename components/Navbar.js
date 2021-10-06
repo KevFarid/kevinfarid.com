@@ -17,7 +17,7 @@ export default function Navbar() {
         <a>Proyectos</a>
         <a>Blog</a>
         <a>Concacto</a>
-        <a className='cv'>Descargar CV</a>
+        <a className='cv' href='/cv-kevin-farid-cruz.pdf' target='_black'>Descargar CV</a>
       </div>
     </div>
   )
