@@ -1,0 +1,48 @@
+@use 'colors';
+
+%configDisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.125rem;
+  height: 310px;
+
+}
+
+.display {
+  @extend %configDisplay;
+  background: url('../assets/displatBG.jpg');
+  background-position: center -500px;
+}
+
+.blur {
+  @extend %configDisplay;
+  width: 100%;
+  backdrop-filter: blur(4px);
+  text-align: right;
+
+  h2, h1 {
+    margin: 0 .18rem;
+  }
+
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.51));
+
+
+  .image {
+    margin: 0 1.875rem;
+  }
+}
+.socialmedia {
+  display: flex;
+  flex-direction: column;
+
+  .image {
+    margin: 0.3125rem 0;
+    filter: invert(1) drop-shadow(0 4px 4px rgba(0, 0, 0, 0.51));
+  }
+
+  :hover {
+    cursor: pointer;
+    filter: invert(68%) sepia(73%) saturate(394%) hue-rotate(353deg) brightness(97%) contrast(83%) drop-shadow(0 4px 4px rgba(0, 0, 0, 0.51));
+  }
+}
