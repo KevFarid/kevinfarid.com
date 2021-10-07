@@ -1,7 +1,7 @@
-import ProjectCard from '../../components/projectcard'
+import ProjectCard from '../../components/ProjectCard'
 import { getAllFilesMetadata } from '../../lib/mdx'
 
-export default function lector({ posts }) {
+export default function Projects({ posts }) {
   return (
     <div className="padding-06rem">
       <h1>¿Cuáles son mis proyectos?</h1>
