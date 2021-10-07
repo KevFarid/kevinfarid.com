@@ -1,0 +1,63 @@
+@use 'colors';
+
+.projectcard {
+  margin: 15px;
+  background-color: colors.$backgroundColor;
+  border-radius: 1.875rem;
+  width: 295px;
+  height: 337px;
+  --smooth-corners: 10;
+  box-shadow: 0 0.25rem 0.25rem rgba($color: #000000, $alpha: 0.25);
+
+  .image {
+    height: 155px;
+
+    .rounded-top {
+      border-radius: 1.875rem 1.875rem 0 0;
+    }
+  }
+
+  .card-content {
+    padding: 10px;
+    text-align: justify;
+
+    p {
+      font-size: 0.875rem;
+      margin-top: 0;
+
+      width: 100%;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+    }
+
+    h3 {
+      margin: 0;
+    }
+
+    .button {
+      margin-top: 1.875rem;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      button {
+        color: colors.$complementaryColor;
+        width: 88px;
+        height: 35px;
+        border-radius: 12px;
+        background-color: colors.$backgroundColor;
+        border: 1px solid;
+        border-color: colors.$complementaryColor;
+      }
+
+      :hover {
+        background-color: colors.$complementaryColor;
+        color: colors.$textColor;
+        transition: all 0.5s ease;
+        cursor: pointer;
+      }
+    }
+  }
+}
