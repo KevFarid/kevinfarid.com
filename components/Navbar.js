@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 export default function Navbar() {
-  console.log(useRouter().asPath)
   return (
     <div className="navbar">
       <div className="logo">

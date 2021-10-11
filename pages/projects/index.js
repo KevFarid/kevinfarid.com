@@ -1,4 +1,4 @@
-import ProjectCard from '../../components/ProjectCard'
+import Card from '../../components/Card'
 import { getAllFilesMetadata } from '../../lib/mdx'
 
 export default function Projects({ posts }) {
@@ -12,7 +12,7 @@ export default function Projects({ posts }) {
       </p>
       <div className='flexbox-space-around'>
         {posts.map((post) => (
-          <ProjectCard key={post.slug} {...post}/>
+          <Card key={post.slug} {...post} type='projects'/>
         ))}
       </div>
     </div>

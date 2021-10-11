@@ -18,7 +18,6 @@
   }
 
   .card-content {
-    padding: 10px;
     text-align: justify;
 
     p {
@@ -35,12 +34,28 @@
     h3 {
       margin: 0;
     }
+  }
+
+  .card-footer {
+    display: grid;
+    grid-template-areas: "autor time" ". button";
+
+    .autor {
+      grid-area: autor;
+      filter: opacity(30%);
+    }
+
+    .time {
+      grid-area: time;
+      text-align: end;
+      filter: opacity(30%);
+    }
 
     .button {
-      margin-top: 1.875rem;
+      margin-top: 0.93rem;
       display: flex;
       justify-content: flex-end;
-      align-items: center;
+      grid-area: button;
 
       button {
         color: colors.$complementaryColor;
