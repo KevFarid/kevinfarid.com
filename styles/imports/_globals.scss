@@ -29,7 +29,7 @@ h1 {
 }
 
 p {
-  font-size: 1.125rem;
+  font-size: 16px;
 }
 
 .padding-06rem {
@@ -47,4 +47,22 @@ p {
 
 .text-primary-color {
   color: colors.$primaryColor;
+}
+
+.center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.margin-04rem {
+  margin: 0.4rem;
 }

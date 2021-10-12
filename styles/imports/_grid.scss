@@ -1,0 +1,13 @@
+.grid-about {
+  display: grid;
+  grid-template-columns: 22.15rem auto;
+
+  .col-left {
+    margin-top: 30px;
+    width: 20rem;
+  }
+
+  .col-right {
+    width: 20rem;
+  }
+}
