@@ -1,0 +1,24 @@
+.footer {
+
+  text-align: center;
+
+  margin-top: 65px;
+
+  .icons {
+    display: flex;
+    justify-content: center;
+
+    .image {
+      margin: 0 10px;
+      filter: invert(1)
+    }
+
+    :hover{
+      cursor: pointer;
+    }
+  }
+
+  p {
+    margin: 5px;
+  }
+}
