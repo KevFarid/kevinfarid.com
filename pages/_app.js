@@ -1,14 +1,11 @@
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
+import Layout from '../components/Layaut'
 import '../styles/main.scss'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="container">
-      <Navbar/>
+    <Layout>
       <Component {...pageProps} />
-      <Footer/>
-    </div>
+    </Layout>
   )
 }
 
