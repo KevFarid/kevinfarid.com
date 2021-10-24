@@ -1,8 +1,13 @@
+@use 'colors';
 .footer {
 
   text-align: center;
 
   margin-top: 65px;
+
+  padding: 10px;
+
+  border-top: 1px solid rgba(colors.$backgroundColor, 0.5);
 
   .icons {
     display: flex;
@@ -18,7 +23,11 @@
     }
   }
 
+  h2 {
+    margin: 7px;
+  }
+
   p {
-    margin: 5px;
+    margin: 7px;
   }
 }
