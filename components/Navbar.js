@@ -21,9 +21,6 @@ export default function Navbar() {
         <Link href="/blog">
           <a className={activeRouter('blog')}>Blog</a>
         </Link>
-        <Link href="/contact">
-          <a className={activeRouter('contact')}>Contacto</a>
-        </Link>
         <Link href="/cv-kevin-farid-cruz.pdf">
           <a className="cv" target="_black">
             Descargar CV
