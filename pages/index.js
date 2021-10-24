@@ -13,8 +13,8 @@ export default function Home({ posts, projects }) {
             MIS <span className="text-primary-color">PROYECTOS</span>
           </h2>
           <div className="flexbox-space-around">
-            {posts.map((post) => (
-              <Card key={post.slug} {...post} type="projects" />
+            {projects.map((project) => (
+              <Card key={project.slug} {...project} type="projects" />
             ))}
           </div>
         </section>
@@ -23,8 +23,8 @@ export default function Home({ posts, projects }) {
             MIS <span className="text-primary-color">ULTIMAS ENTRADAS</span>
           </h2>
           <div className="flexbox-space-around">
-            {projects.map((project) => (
-              <Card key={project.slug} {...project} type="projects" />
+            {posts.map((post) => (
+              <Card key={post.slug} {...post} type="blog" />
             ))}
           </div>
         </section>

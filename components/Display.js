@@ -1,26 +1,28 @@
 import Image from 'next/image'
 
+import { constants } from '../config/constans'
+
 export default function Display() {
   return (
-    <div className='display'>
-      <div className='blur'>
-        <div className='title'>
+    <div style={{ background: `url(${constants.imgs.heroBG}) center -500px` }}>
+      <div className="blur">
+        <div className="title">
           <h1>Hola, soy Kevin Farid Cruz</h1>
           <h2>💻 Frontend Developer</h2>
         </div>
-        <div className='image'>
+        <div className="image">
           <Image
-            src="https://avatars.githubusercontent.com/u/51223315?v=4"
+            src={constants.avatar}
             alt="kevfarid_"
             width={212}
             height={212}
             className="round"
           />
         </div>
-        <div className='socialmedia'>
-          <div className='image'>
+        <div className="socialmedia">
+          <div className="image">
             <Image
-              src="https://i.imgur.com/IDzgJgj.png"
+              src={constants.icons.github}
               alt="github"
               width={47}
               height={47}
@@ -28,9 +30,9 @@ export default function Display() {
               title="GitHub"
             />
           </div>
-          <div className='image'>
+          <div className="image">
             <Image
-              src="https://i.imgur.com/z5abyyx.png"
+              src={constants.icons.linkedin}
               alt="linkedin"
               width={47}
               height={47}

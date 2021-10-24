@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+import { constants } from '../config/constans'
+
 export default function About() {
   return (
     <div className="padding-06rem">
@@ -8,7 +10,7 @@ export default function About() {
         <div className="col-left">
           <div className="center-div">
             <Image
-              src="https://avatars.githubusercontent.com/u/51223315?v=4"
+              src={constants.avatar}
               alt="kevfarid_"
               width={212}
               height={212}

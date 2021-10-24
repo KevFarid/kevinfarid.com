@@ -2,11 +2,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
+import { constants } from '../config/constans'
+
 export default function Navbar() {
   return (
     <div className="navbar">
       <div className="logo">
-        <Image src="https://i.imgur.com/2IE7z1O.png" alt="kevfarid_" width={50} height={59.76} />
+        <Image src={constants.icons.myIcon} alt="kevfarid_" width={50} height={59.76} />
       </div>
       <div className="menu">
         <Link href="/">
@@ -21,7 +23,7 @@ export default function Navbar() {
         <Link href="/blog">
           <a className={activeRouter('blog')}>Blog</a>
         </Link>
-        <Link href="/cv-kevin-farid-cruz.pdf">
+        <Link href={constants.profilesUrls.cv}>
           <a className="cv" target="_black">
             Descargar CV
           </a>

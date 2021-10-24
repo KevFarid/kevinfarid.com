@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+import { constants } from '../config/constans'
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -7,7 +9,7 @@ export default function Footer() {
       <div className="icons">
         <div className="image">
           <Image
-            src="https://i.imgur.com/IDzgJgj.png"
+            src={constants.icons.github}
             alt="github"
             width={35}
             height={35}
@@ -17,7 +19,7 @@ export default function Footer() {
         </div>
         <div className="image">
           <Image
-            src="https://i.imgur.com/z5abyyx.png"
+            src={constants.icons.linkedin}
             alt="linkedin"
             width={35}
             height={35}
@@ -27,7 +29,7 @@ export default function Footer() {
         </div>
         <div className="image">
           <Image
-            src="https://i.imgur.com/T7Zqh03.png"
+            src={constants.icons.email}
             alt="linkedin"
             width={35}
             height={35}
