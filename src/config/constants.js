@@ -12,10 +12,13 @@ export const constants = {
     linkedin: 'https://i.imgur.com/z5abyyx.png',
     github: 'https://i.imgur.com/IDzgJgj.png',
     email: 'https://i.imgur.com/T7Zqh03.png',
-    myIcon: 'https://i.imgur.com/2IE7z1O.png'
+    myIcon: 'https://i.imgur.com/2IE7z1O.png',
+    menu: 'https://i.imgur.com/6lz6V69.png',
+    close: 'https://i.imgur.com/c9bD88s.png'
   },
   imgs:{
-    heroBG: '/heroBG.jpg'
+    heroBG: '/heroBG.jpg',
+    about: 'https://i.imgur.com/K0VY5gf.png'
   },
   language: es_co
 }

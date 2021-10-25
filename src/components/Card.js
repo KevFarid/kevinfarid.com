@@ -8,7 +8,7 @@ const lang = constants.language
 
 export default function Card({ title, img, desc, lastUpdate, by, slug, type }) {
   return (
-    <div className="projectcard">
+    <div className="card">
       <article>
         <div className="card-header">
           <div className="image">

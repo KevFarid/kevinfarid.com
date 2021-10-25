@@ -35,6 +35,7 @@
   :link, :visited, :active {
     text-decoration:none;
     color: colors.$textColor;
+    transition: 0.5s;
   }
 
   .cv {
@@ -45,9 +46,24 @@
   :hover {
     background-color: colors.$hoverColor;
     cursor: pointer;
+    transition: 0.5s;
   }
 
   .select {
     background: colors.$complementaryColor;
+    transition: 0.5s;
   }
+}
+
+.bunger-menu {
+  background-color: colors.$primaryColor;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  display: none;
+  margin: 10px;
+}
+
+.img {
+  filter: invert(1);
 }

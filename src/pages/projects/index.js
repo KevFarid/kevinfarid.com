@@ -11,7 +11,7 @@ export default function Projects({ projects }) {
   return (
     <div className="padding-06rem">
       <h1>{lang.pages.projects.title}</h1>
-      <p>{lang.pages.projects.description}</p>
+      <p className='text-justify'>{lang.pages.projects.description}</p>
       <div className="flexbox-space-around">
         {projects.map((project) => (
           <Card key={project.slug} {...project} type="projects" />

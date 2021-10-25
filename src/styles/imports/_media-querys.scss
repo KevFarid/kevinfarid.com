@@ -1,0 +1,128 @@
+@use 'colors';
+
+@media (max-width: 1060px) {
+  .flexbox-space-around {
+    padding: 0;
+    margin: 1px;
+  }
+}
+
+/*Tablet*/
+@media (max-width: 991.98px) {
+  .container {
+    margin: 0;
+  }
+
+  .flexbox-space-around {
+    padding: 0;
+    margin: 1px;
+  }
+}
+
+/*movil*/
+@media (max-width: 685px) {
+  $animation-menu-duration: 0.5s;
+
+  h1 {
+    text-align: center;
+  }
+
+  .card {
+    margin: 4px;
+  }
+
+  .menu {
+    background-color: rgba(colors.$backgroundColor, 0.9999);
+
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 100%;
+
+    height: 100%;
+    width: 100%;
+
+    padding: 0;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    a {
+      border-radius: 1.875rem;
+      padding: 0.625rem 1.25rem;
+      margin: 5px 0;
+      width: 40%;
+    }
+
+    overflow: hidden
+  }
+
+  .animation-menu-close {
+    animation: square-to-circle $animation-menu-duration;
+    a {
+      animation: fadeOut $animation-menu-duration;
+    }
+  }
+
+  .showMenu {
+    a {
+      animation: fadeIn $animation-menu-duration;
+    }
+
+    animation: circle-to-square $animation-menu-duration;
+
+    top: 0;
+    left: 0;
+  }
+
+  .bunger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    animation: grow2 $animation-menu-duration;
+  }
+
+  .bunger-menu-open {
+    top: 10;
+    left: calc(100% - 70px);
+    position: fixed;
+    z-index: 4;
+    animation: grow $animation-menu-duration;
+  }
+
+  .grid-about {
+    grid-template-columns: auto;
+    .col-left {
+      width: 20rem;
+      width: 100%;
+    }
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .blur {
+    flex-direction: column;
+    height: 470px;
+  }
+
+  .socialmedia {
+    flex-direction: row;
+    .image {
+      margin: 5px;
+    }
+  }
+}
+
+/*hero movil*/
+@media (max-width: 787px) {
+  .title {
+    h1 {
+      width: 250px;
+    }
+  }
+}

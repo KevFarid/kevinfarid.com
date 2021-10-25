@@ -30,6 +30,7 @@ export default function Display() {
               className="round"
               title="GitHub"
             />
+            <p>GitHub</p>
           </div>
           <div className="image">
             <Image
@@ -40,6 +41,7 @@ export default function Display() {
               className="round"
               title="Linkedin"
             />
+            <p>Linkedin</p>
           </div>
         </div>
       </div>

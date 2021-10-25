@@ -1,8 +1,8 @@
 @use 'colors';
 
-.projectcard {
+.card {
   margin: 15px;
-  background-color: colors.$backgroundColor;
+  background-color: colors.$baseColor;
   border-radius: 1.875rem;
   width: 295px;
   height: 337px;
@@ -62,7 +62,7 @@
         width: 88px;
         height: 35px;
         border-radius: 12px;
-        background-color: colors.$backgroundColor;
+        background-color: colors.$baseColor;
         border: 1px solid;
         border-color: colors.$complementaryColor;
       }

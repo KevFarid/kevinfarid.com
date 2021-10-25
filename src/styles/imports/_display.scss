@@ -1,16 +1,14 @@
 @use 'colors';
 
-%configDisplay {
+.blur {
   display: flex;
   justify-content: center;
   align-items: center;
+
   margin-top: 0.125rem;
   height: 310px;
-}
-
-.blur {
-  @extend %configDisplay;
   width: 100%;
+
   backdrop-filter: blur(4px);
   text-align: right;
 
@@ -28,10 +26,17 @@
 .socialmedia {
   display: flex;
   flex-direction: column;
+  text-align: center;
 
   .image {
     margin: 0.3125rem 0;
     filter: invert(1) drop-shadow(0 4px 4px rgba(0, 0, 0, 0.51));
+
+    p {
+      margin: 0;
+      text-align:center;
+      filter: invert(1) drop-shadow(0 2px 4px rgba(255, 255, 255, 0.836));
+    }
   }
 
   :hover {

@@ -12,7 +12,7 @@ export default function Blog({ posts }) {
     <div>
       <div className="padding-06rem">
         <h1>{lang.pages.blog.title}</h1>
-        <p>{lang.pages.blog.description}</p>
+        <p className='text-justify'>{lang.pages.blog.description}</p>
         <div className="flexbox-space-around">
           {posts.map((post) => (
             <Card key={post.slug} {...post} type="blog" />

@@ -6,7 +6,7 @@ const lang = constants.language
 export default function About() {
   return (
     <div className="padding-06rem">
-      <h1>{lang.pages.about.title}</h1>
+      <h1 className='about-h1'>{lang.pages.about.title}</h1>
       <div className="grid-about">
         <div className="col-left">
           <div className="center-div">
@@ -24,6 +24,12 @@ export default function About() {
           </div>
         </div>
         <div className="text-justify">
+          <Image
+            src={constants.imgs.about}
+            alt="kevfarid_"
+            width={1500}
+            height={500}
+          />
           <h3>{lang.pages.about.sections.aboutme.title}</h3>
           <p>{lang.pages.about.sections.aboutme.text}</p>
           <h3>{lang.pages.about.sections.specialties.title}</h3>
