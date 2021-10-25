@@ -24,6 +24,12 @@ export default function About() {
           </div>
         </div>
         <div className="text-justify">
+          <Image
+            src={constants.imgs.about}
+            alt="kevfarid_"
+            width={1500}
+            height={500}
+          />
           <h3>{lang.pages.about.sections.aboutme.title}</h3>
           <p>{lang.pages.about.sections.aboutme.text}</p>
           <h3>{lang.pages.about.sections.specialties.title}</h3>

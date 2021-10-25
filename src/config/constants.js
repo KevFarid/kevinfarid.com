@@ -15,7 +15,8 @@ export const constants = {
     myIcon: 'https://i.imgur.com/2IE7z1O.png'
   },
   imgs:{
-    heroBG: '/heroBG.jpg'
+    heroBG: '/heroBG.jpg',
+    about: 'https://i.imgur.com/K0VY5gf.png'
   },
   language: es_co
 }
