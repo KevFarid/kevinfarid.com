@@ -1,9 +1,13 @@
-import { getFileBySlug, getFiles } from '../../lib/mdx'
 import { MDXRemote } from "next-mdx-remote";
+import PropTypes from 'prop-types'
 
-export default function Post({ source, frontmatter }) {
+import { getFileBySlug, getFiles } from '../../lib/mdx'
+
+export default function Project({ source, frontmatter }) {
   return (
-    <MDXRemote {...source}/>
+    <article className='padding-06rem'>
+      <MDXRemote {...source}/>
+    </article>
   );
 }
 
@@ -33,4 +37,9 @@ export async function getStaticProps({ params }) {
       },
     },
   };
+}
+
+Project.propTypes = {
+  source: PropTypes.object.isRequired,
+  frontmatter: PropTypes.object.isRequired
 }

@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 import { getAllFilesMetadata } from '../lib/mdx'
 
 import Display from '../components/Display'
@@ -48,4 +50,9 @@ export async function getStaticProps() {
       projects: projects.slice(0, 3),
     },
   }
+}
+
+Home.prototypes = {
+  projects: PropTypes.arrayOf(PropTypes.object).isRequired,
+  posts: PropTypes.arrayOf(PropTypes.object).isRequired
 }

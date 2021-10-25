@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import moment from 'moment'
+import PropTypes from 'prop-types'
 
 import { constants } from '../config/constants'
 const lang = constants.language
@@ -50,4 +51,14 @@ const isPost = (type, by, lastUpdate) => {
         <span className="time">{formatDate(lastUpdate)}</span>
       </>
     )
+}
+
+Card.prototypes = {
+  title: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
+  lastUpdate:PropTypes.string.isRequired,
+  by: PropTypes.string.isRequired,
+  slug: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired
 }

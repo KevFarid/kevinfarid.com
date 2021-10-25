@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import { getAllFilesMetadata } from '../../lib/mdx'
 
 import Card from '../../components/Card'
@@ -26,4 +28,8 @@ export async function getStaticProps() {
   return {
     props: { posts },
   }
+}
+
+Blog.propTypes = {
+  posts: PropTypes.arrayOf(PropTypes.object).isRequired
 }
