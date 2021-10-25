@@ -1,18 +1,18 @@
-import Card from '../../components/Card'
 import { getAllFilesMetadata } from '../../lib/mdx'
+
+import Card from '../../components/Card'
+
+import { constants } from '../../config/constants'
+const lang = constants.language
 
 export default function Projects({ posts }) {
   return (
     <div className="padding-06rem">
-      <h1>¿Cuáles son mis proyectos?</h1>
-      <p>
-        Me encanta desarrollar, a cada momento investigo y estudio todo lo que me gusta. Cuando
-        desarrollo algo me gusta mostrarlo a las demas personas y aqui podras ver mis proyectos más
-        una historia de cómo se desarrollaron.
-      </p>
-      <div className='flexbox-space-around'>
+      <h1>{lang.pages.projects.title}</h1>
+      <p>{lang.pages.projects.description}</p>
+      <div className="flexbox-space-around">
         {posts.map((post) => (
-          <Card key={post.slug} {...post} type='projects'/>
+          <Card key={post.slug} {...post} type="projects" />
         ))}
       </div>
     </div>

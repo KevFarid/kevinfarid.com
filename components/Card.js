@@ -2,6 +2,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import moment from 'moment'
 
+import { constants } from '../config/constants'
+const lang = constants.language
+
 export default function Card({ title, img, desc, lastUpdate, by, slug, type }) {
   return (
     <div className="projectcard">
@@ -26,7 +29,7 @@ export default function Card({ title, img, desc, lastUpdate, by, slug, type }) {
           {isPost(type, by, lastUpdate)}
           <div className="button">
             <Link href={`/${type}/${slug}`}>
-              <button>Ver más</button>
+              <button>{lang.componets.card.more}</button>
             </Link>
           </div>
         </div>
@@ -36,14 +39,14 @@ export default function Card({ title, img, desc, lastUpdate, by, slug, type }) {
 }
 
 const formatDate = (date) => {
-  return `Hace: ${moment(date, 'DDMMYYYY').fromNow()}`
+  return `${lang.componets.card.lastUpdate}: ${moment(date, 'DDMMYYYY').fromNow()}`
 }
 
 const isPost = (type, by, lastUpdate) => {
   if (type === 'blog')
     return (
       <>
-        <span className="autor">Por: {by}</span>
+        <span className="autor">{lang.componets.card.by}: {by}</span>
         <span className="time">{formatDate(lastUpdate)}</span>
       </>
     )

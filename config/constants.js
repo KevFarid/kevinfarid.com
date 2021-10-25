@@ -17,8 +17,5 @@ export const constants = {
   imgs:{
     heroBG: '/heroBG.jpg'
   },
-  language: {
-    spanish: es_co,
-    default: 'spanish',
-  },
+  language: es_co
 }

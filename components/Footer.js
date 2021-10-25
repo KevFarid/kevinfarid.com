@@ -1,11 +1,12 @@
 import Image from 'next/image'
 
-import { constants } from '../config/constans'
+import { constants } from '../config/constants'
+const lang = constants.language
 
 export default function Footer() {
   return (
     <footer className="footer">
-      <h2>Contacme</h2>
+      <h2>{lang.footer.title}</h2>
       <div className="icons">
         <div className="image">
           <Image
@@ -14,7 +15,7 @@ export default function Footer() {
             width={35}
             height={35}
             className="round"
-            title="GitHub"
+            title={lang.footer.socialMedia.github}
           />
         </div>
         <div className="image">
@@ -24,7 +25,7 @@ export default function Footer() {
             width={35}
             height={35}
             className="round"
-            title="Linkedin"
+            title={lang.footer.socialMedia.linkedin}
           />
         </div>
         <div className="image">
@@ -34,12 +35,12 @@ export default function Footer() {
             width={35}
             height={35}
             className="round"
-            title="Enviame un correo"
+            title={lang.footer.socialMedia.email}
           />
         </div>
       </div>
-      <p>Kev Farid • @kevfarid</p>
-      <p>Hecho con pasión ❤</p>
+      <p>{lang.myName} • {lang.atsign}</p>
+      <p>{lang.footer.finalText}</p>
     </footer>
   )
 }

@@ -1,11 +1,12 @@
 import Image from 'next/image'
 
-import { constants } from '../config/constans'
+import { constants } from '../config/constants'
+const lang = constants.language
 
 export default function About() {
   return (
     <div className="padding-06rem">
-      <h1>Sobre mi</h1>
+      <h1>{lang.pages.about.title}</h1>
       <div className="grid-about">
         <div className="col-left">
           <div className="center-div">
@@ -18,30 +19,19 @@ export default function About() {
             />
           </div>
           <div className="text-center">
-            <h2 className="margin-04rem">Kev Farid</h2>
-            <p className="margin-04rem">i'm Frontend Developer 👨‍💻</p>
+            <h2 className="margin-04rem">{lang.myName}</h2>
+            <p className="margin-04rem">{lang.pages.about.description}</p>
           </div>
         </div>
         <div className="text-justify">
-          <h3>¿Quién soy? 🤔</h3>
-          <p>
-            Soy Desarrollador Frontend. Me encanta el desarrollado de Software. Comence a programar
-            a la edad de 12 años en Visual Basic 2008, aunque habia muchos conceptos que no entendia
-            le comence a tenerle gusto a teclear. No fue hace dos años que comence a vivir de lo que
-            amaba y que siempre me encanto.
-          </p>
-          <h3>Especialidades 🎨</h3>
-          <p>Angular, Git, Javascript, Nodejs, Ionic</p>
-          <h3>Aprendiendo 🧩</h3>
-          <p>ReactJs, Redux, Sass, Python</p>
-          <h3>Trayectoria 🧬</h3>
-          <p>
-            Tengo dos años de experencia en el desarrollado web con tecnologias como Angular, aunque
-            tengo una habilidad de adactarme rapido a otras tecnologias. He trabajo como Freelance
-            haciendo proyectos para pequeñas empresas de mi ciudad actual (Bogotá). Actualmente ando
-            estudiando Ingeneria de Software y al mismo tiempo mejorando mis habilidades técnicas,
-            tambien me propuse a mejorar mi ingles.
-          </p>
+          <h3>{lang.pages.about.sections.aboutme.title}</h3>
+          <p>{lang.pages.about.sections.aboutme.text}</p>
+          <h3>{lang.pages.about.sections.specialties.title}</h3>
+          <p>{lang.pages.about.sections.specialties.text}</p>
+          <h3>{lang.pages.about.sections.learning.title}</h3>
+          <p>{lang.pages.about.sections.learning.text}</p>
+          <h3>{lang.pages.about.sections.experience.title}</h3>
+          <p>{lang.pages.about.sections.experience.text}</p>
         </div>
       </div>
     </div>

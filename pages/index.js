@@ -3,6 +3,9 @@ import { getAllFilesMetadata } from '../lib/mdx'
 import Display from '../components/Display'
 import Card from '../components/Card'
 
+import { constants } from '../config/constants'
+const lang = constants.language
+
 export default function Home({ posts, projects }) {
   return (
     <div>
@@ -10,7 +13,8 @@ export default function Home({ posts, projects }) {
       <div className="padding-06rem">
         <section>
           <h2>
-            MIS <span className="text-primary-color">PROYECTOS</span>
+            {lang.pages.home.my}
+            <span className="text-primary-color"> {lang.pages.home.projectsTitle}</span>
           </h2>
           <div className="flexbox-space-around">
             {projects.map((project) => (
@@ -20,7 +24,8 @@ export default function Home({ posts, projects }) {
         </section>
         <section>
           <h2>
-            MIS <span className="text-primary-color">ULTIMAS ENTRADAS</span>
+            {lang.pages.home.my}
+            <span className="text-primary-color"> {lang.pages.home.latestPostsTitle}</span>
           </h2>
           <div className="flexbox-space-around">
             {posts.map((post) => (

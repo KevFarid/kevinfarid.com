@@ -1,14 +1,15 @@
 import Image from 'next/image'
 
-import { constants } from '../config/constans'
+import { constants } from '../config/constants'
+const lang = constants.language
 
 export default function Display() {
   return (
     <div style={{ background: `url(${constants.imgs.heroBG}) center -500px` }}>
       <div className="blur">
         <div className="title">
-          <h1>Hola, soy Kevin Farid Cruz</h1>
-          <h2>💻 Frontend Developer</h2>
+          <h1>{lang.title}</h1>
+          <h2>{lang.subtitle}</h2>
         </div>
         <div className="image">
           <Image
