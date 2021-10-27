@@ -14,14 +14,19 @@
 .logo {
   margin: 0.8rem;
   width: 3.4375rem;
-  filter: invert(13%) sepia(72%) saturate(5174%) hue-rotate(203deg) brightness(96%) contrast(86%) drop-shadow(0 4px 4px #000000);
+  filter: invert(13%) sepia(72%) saturate(5174%) hue-rotate(203deg) brightness(96%) contrast(86%)
+    drop-shadow(0 4px 4px #000000);
+}
+
+.logo:hover {
+  cursor: pointer;
 }
 
 .menu {
   size: 18px;
   padding: 0.625rem;
 
-  font-weight:bold;
+  font-weight: bold;
   flex-wrap: wrap;
   justify-content: space-around;
   display: flex;
@@ -32,8 +37,10 @@
     margin-right: 0.4375rem;
   }
 
-  :link, :visited, :active {
-    text-decoration:none;
+  :link,
+  :visited,
+  :active {
+    text-decoration: none;
     color: colors.$textColor;
     transition: 0.5s;
   }

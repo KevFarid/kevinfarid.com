@@ -24,7 +24,9 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <div className="logo">
-        <Image src={constants.icons.myIcon} alt="kevfarid_" width={50} height={59.76} />
+        <Link href='/'>
+        <Image src={constants.icons.myIcon} alt="kevfarid_" title={lang.navbar.home} width={50} height={59.76} />
+        </Link>
       </div>
       <nav className={`menu ${openMenu ? 'showMenu' : ''} ${openMenuFirstTime ? 'animation-menu-close' : ''}`} onClick={handleClick}>
         <Link href="/">
