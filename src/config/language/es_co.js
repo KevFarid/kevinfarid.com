@@ -43,6 +43,7 @@ export const es_co = {
       },
     },
     projects: {
+      titlePage: 'Proyectos',
       title: '¿Cuáles son mis proyectos?',
       description:
         'Me encanta desarrollar, a cada momento investigo y estudio todo lo que me gusta. Cuando desarrollo algo me gusta mostrarlo a las demas personas y aqui podras ver mis proyectos más una historia de cómo se desarrollaron.',

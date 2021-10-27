@@ -1,6 +1,7 @@
 import {es_co} from './language/es_co'
 
 export const constants = {
+  title: 'Kev Farid',
   avatar: 'https://avatars.githubusercontent.com/u/51223315?v=4',
   profilesUrls: {
     linkedin: 'https://www.linkedin.com/in/kevfarid/',
@@ -18,7 +19,12 @@ export const constants = {
   },
   imgs:{
     heroBG: '/heroBG.jpg',
-    about: 'https://i.imgur.com/K0VY5gf.png'
+    about: 'https://i.imgur.com/K0VY5gf.png',
+    ogImage: 'https://i.imgur.com/K0VY5gf.png'
   },
-  language: es_co
+  language: es_co,
+  siteData: {
+    siteUrl: 'https://kevinfarid.com',
+    siteRepo: 'https://github.com/kevfarid/kevinfarid.com',
+  }
 }

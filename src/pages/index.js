@@ -4,13 +4,25 @@ import { getAllFilesMetadata } from '../lib/mdx'
 
 import Display from '../components/Display'
 import Card from '../components/Card'
+import Header from 'components/Header'
 
 import { constants } from '../config/constants'
 const lang = constants.language
 
 export default function Home({ posts, projects }) {
+  const title = `Kev Farid`
+  const description = lang.description
+  const ogType = 'website'
+  const ogImage = constants.imgs.ogImage
+
   return (
     <div>
+      <Header
+        title={title}
+        description={description}
+        ogType={ogType}
+        ogImage={ogImage}
+      />
       <Display />
       <div className="padding-06rem">
         <section>
@@ -54,5 +66,5 @@ export async function getStaticProps() {
 
 Home.prototypes = {
   projects: PropTypes.arrayOf(PropTypes.object).isRequired,
-  posts: PropTypes.arrayOf(PropTypes.object).isRequired
+  posts: PropTypes.arrayOf(PropTypes.object).isRequired,
 }

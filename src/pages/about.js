@@ -1,12 +1,25 @@
 import Image from 'next/image'
 
+import Header from 'components/Header'
+
 import { constants } from '../config/constants'
 const lang = constants.language
 
 export default function About() {
+  const title = `${lang.pages.about.title} - Kev Farid`
+  const description = lang.pages.about.description
+  const ogType = 'website'
+  const ogImage = constants.imgs.ogImage
+
   return (
     <div className="padding-06rem">
-      <h1 className='about-h1'>{lang.pages.about.title}</h1>
+      <Header
+        title={title}
+        description={description}
+        ogType={ogType}
+        ogImage={ogImage}
+      />
+      <h1 className="about-h1">{lang.pages.about.title}</h1>
       <div className="grid-about">
         <div className="col-left">
           <div className="center-div">
@@ -24,12 +37,7 @@ export default function About() {
           </div>
         </div>
         <div className="text-justify">
-          <Image
-            src={constants.imgs.about}
-            alt="kevfarid_"
-            width={1500}
-            height={500}
-          />
+          <Image src={constants.imgs.about} alt="kevfarid_" width={1500} height={500} />
           <h3>{lang.pages.about.sections.aboutme.title}</h3>
           <p>{lang.pages.about.sections.aboutme.text}</p>
           <h3>{lang.pages.about.sections.specialties.title}</h3>

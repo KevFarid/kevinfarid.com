@@ -14,5 +14,5 @@ export default function Layout({ children }) {
 }
 
 Layout.propTypes = {
-  children: PropTypes.object.isRequired
+  children: PropTypes.array.isRequired
 }
