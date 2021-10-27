@@ -1,4 +1,4 @@
-import {es_co} from './language/es_co'
+import { es_co } from './language/es_co'
 
 export const constants = {
   title: 'Kev Farid',
@@ -7,7 +7,7 @@ export const constants = {
     linkedin: 'https://www.linkedin.com/in/kevfarid/',
     github: 'https://github.com/KevFarid',
     email: 'kpelaez75@gmail.com',
-    cv: '/cv-kevin-farid-cruz.pdf'
+    cv: '/cv-kevin-farid-cruz.pdf',
   },
   icons: {
     linkedin: 'https://i.imgur.com/z5abyyx.png',
@@ -15,16 +15,17 @@ export const constants = {
     email: 'https://i.imgur.com/T7Zqh03.png',
     myIcon: 'https://i.imgur.com/2IE7z1O.png',
     menu: 'https://i.imgur.com/6lz6V69.png',
-    close: 'https://i.imgur.com/c9bD88s.png'
+    close: 'https://i.imgur.com/c9bD88s.png',
+    download: 'https://i.imgur.com/UDseqVv.png',
   },
-  imgs:{
+  imgs: {
     heroBG: '/heroBG.jpg',
     about: 'https://i.imgur.com/K0VY5gf.png',
-    ogImage: 'https://i.imgur.com/K0VY5gf.png'
+    ogImage: 'https://i.imgur.com/K0VY5gf.png',
   },
   language: es_co,
   siteData: {
     siteUrl: 'https://kevinfarid.com',
     siteRepo: 'https://github.com/kevfarid/kevinfarid.com',
-  }
+  },
 }

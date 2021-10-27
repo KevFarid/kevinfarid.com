@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 
 import { getAllFilesMetadata } from '../lib/mdx'
 
-import Display from '../components/Display'
+import Hero from '../components/Hero'
 import Card from '../components/Card'
 import Header from 'components/Header'
 
@@ -23,7 +23,7 @@ export default function Home({ posts, projects }) {
         ogType={ogType}
         ogImage={ogImage}
       />
-      <Display />
+      <Hero />
       <div className="padding-06rem">
         <section>
           <h2>

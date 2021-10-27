@@ -1,6 +1,6 @@
 @use 'colors';
 
-.blur {
+.hero {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,15 +12,20 @@
   backdrop-filter: blur(4px);
   text-align: right;
 
-  h2, h1 {
-    margin: 0 .18rem;
+  h2,
+  h1 {
+    margin: 0 0.18rem;
   }
 
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.51));
 
-
   .image {
     margin: 0 1.875rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
   }
 }
 .socialmedia {
@@ -33,14 +38,14 @@
     filter: invert(1) drop-shadow(0 4px 4px rgba(0, 0, 0, 0.51));
 
     p {
+      font-weight: bold;
       margin: 0;
-      text-align:center;
-      filter: invert(1) drop-shadow(0 2px 4px rgba(255, 255, 255, 0.836));
+      text-align: center;
+      filter: invert(1) drop-shadow(0 2px 4px rgb(255, 255, 255));
     }
   }
 
   :hover {
     cursor: pointer;
-    filter: invert(68%) sepia(73%) saturate(394%) hue-rotate(353deg) brightness(97%) contrast(83%) drop-shadow(0 4px 4px rgba(0, 0, 0, 0.51));
   }
 }

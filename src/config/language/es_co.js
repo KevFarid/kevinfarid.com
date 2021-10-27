@@ -67,7 +67,10 @@ export const es_co = {
     card: {
       more: 'Ver más',
       by: 'Por',
-      lastUpdate: 'Hace'
-    }
-  }
+      lastUpdate: 'Hace',
+    },
+    hero: {
+      writeMe: 'Escríbeme',
+    },
+  },
 }
