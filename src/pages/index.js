@@ -24,12 +24,12 @@ export default function Home({ posts, projects }) {
         ogImage={ogImage}
       />
       <Hero />
-      <div className="padding-06rem">
+      <article className="padding-06rem">
         <section>
-          <h2>
+          <h1 className="h1-with-sizeh2">
             {lang.pages.home.my}
             <span className="text-primary-color"> {lang.pages.home.projectsTitle}</span>
-          </h2>
+          </h1>
           <div className="flexbox-space-around">
             {projects.map((project) => (
               <Card key={project.slug} {...project} type="projects" />
@@ -37,17 +37,17 @@ export default function Home({ posts, projects }) {
           </div>
         </section>
         <section>
-          <h2>
+          <h1 className="h1-with-sizeh2">
             {lang.pages.home.my}
             <span className="text-primary-color"> {lang.pages.home.latestPostsTitle}</span>
-          </h2>
+          </h1>
           <div className="flexbox-space-around">
             {posts.map((post) => (
               <Card key={post.slug} {...post} type="blog" />
             ))}
           </div>
         </section>
-      </div>
+      </article>
     </div>
   )
 }

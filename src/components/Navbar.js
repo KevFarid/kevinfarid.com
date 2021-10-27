@@ -22,11 +22,11 @@ export default function Navbar() {
   }
 
   return (
-    <div className="navbar">
+    <header className="navbar">
       <div className="logo">
         <Image src={constants.icons.myIcon} alt="kevfarid_" width={50} height={59.76} />
       </div>
-      <div className={`menu ${openMenu ? 'showMenu' : ''} ${openMenuFirstTime ? 'animation-menu-close' : ''}`} onClick={handleClick}>
+      <nav className={`menu ${openMenu ? 'showMenu' : ''} ${openMenuFirstTime ? 'animation-menu-close' : ''}`} onClick={handleClick}>
         <Link href="/">
           <a className={activeRouter('')}>{lang.navbar.home}</a>
         </Link>
@@ -44,7 +44,7 @@ export default function Navbar() {
             {lang.navbar.cvDownload}
           </a>
         </Link>
-      </div>
+      </nav>
       <div className={`bunger-menu bunger-menu-close ${openMenu ? 'bunger-menu-open' : ''}`} onClick={handleClickMenu}>
         <Image
           src={!openMenu ? constants.icons.menu : constants.icons.close}
@@ -54,7 +54,7 @@ export default function Navbar() {
           className="img"
         />
       </div>
-    </div>
+    </header>
   )
 }
 

@@ -12,7 +12,7 @@ export default function About() {
   const ogImage = constants.imgs.ogImage
 
   return (
-    <div className="padding-06rem">
+    <section className="padding-06rem">
       <Header
         title={title}
         description={description}
@@ -48,6 +48,6 @@ export default function About() {
           <p>{lang.pages.about.sections.experience.text}</p>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

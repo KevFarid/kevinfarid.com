@@ -7,7 +7,7 @@ export default function Display() {
   const sizeIcon = 40
 
   return (
-    <div style={{ background: `url(${constants.imgs.heroBG}) center -500px` }}>
+    <section style={{ background: `url(${constants.imgs.heroBG}) center -500px` }}>
       <div className="hero">
         <div className="title">
           <h1>{lang.title}</h1>
@@ -64,6 +64,6 @@ export default function Display() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

@@ -9,7 +9,7 @@ const lang = constants.language
 export default function Card({ title, img, desc, lastUpdate, by, slug, type }) {
   return (
     <div className="card">
-      <article>
+      <div>
         <div className="card-header">
           <div className="image">
             <Image
@@ -34,7 +34,7 @@ export default function Card({ title, img, desc, lastUpdate, by, slug, type }) {
             </Link>
           </div>
         </div>
-      </article>
+      </div>
     </div>
   )
 }
