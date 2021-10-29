@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /cv-kevin-farid-cruz.pdf/
 
 Sitemap: https://kevinfarid.com/sitemap.xml

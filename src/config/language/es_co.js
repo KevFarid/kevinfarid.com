@@ -2,7 +2,7 @@ export const es_co = {
   title: 'Hola, soy Kevin Farid',
   subtitle: '💻 Frontend Developer',
   description:
-    "i'm a frontend developer :art:. I worked with technology such as Angular, NodeJS, Express, MongoDB and have some experience with SQL, React and CSS preprocessors",
+    "i'm a frontend developer 🎨. I worked with technology such as Angular, NodeJS, Express, MongoDB and have some experience with SQL, React and CSS preprocessors",
   myName: 'Kev Farid',
   atsign: '@KevFarid',
   navbar: {

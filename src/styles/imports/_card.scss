@@ -23,6 +23,7 @@
     p {
       font-size: 0.875rem;
       margin-top: 0;
+      margin-bottom: 10px;
 
       width: 100%;
       display: -webkit-box;
@@ -49,6 +50,7 @@
       grid-area: time;
       text-align: end;
       filter: opacity(30%);
+      margin-bottom: 10px;
     }
 
     .button {
