@@ -30,11 +30,11 @@ export const es_co = {
         },
         specialties: {
           title: 'Especialidades 🎨',
-          text: 'Angular, Git, Javascript, Nodejs, Ionic',
+          text: 'Angular, Git, Javascript, Nodejs, Ionic, Reactjs',
         },
         learning: {
           title: 'Aprendiendo 🧩',
-          text: 'ReactJs, Redux, Sass, Python',
+          text: 'Go, Redux, Sass, Python',
         },
         experience: {
           title: 'Trayectoria 🧬',
