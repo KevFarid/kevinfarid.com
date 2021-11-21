@@ -8,11 +8,13 @@ export const constants = {
     github: 'https://github.com/KevFarid',
     email: 'kpelaez75@gmail.com',
     cv: '/cv-kevin-farid-cruz.pdf',
+    twitter: 'https://twitter.com/KevFarid_'
   },
   icons: {
     linkedin: 'https://i.imgur.com/z5abyyx.png',
     github: 'https://i.imgur.com/IDzgJgj.png',
     email: 'https://i.imgur.com/T7Zqh03.png',
+    twitter: 'https://i.imgur.com/XOaGLwf.png',
     myIcon: 'https://i.imgur.com/2IE7z1O.png',
     menu: 'https://i.imgur.com/6lz6V69.png',
     close: 'https://i.imgur.com/c9bD88s.png',

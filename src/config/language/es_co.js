@@ -60,6 +60,7 @@ export const es_co = {
       github: 'Mi GitHub',
       linkedin: 'Encuentrame en Linkedin',
       email: 'Enviame un correo',
+      twitter: 'Mi Twitter'
     },
     finalText: 'Hecho con pasión ❤',
   },

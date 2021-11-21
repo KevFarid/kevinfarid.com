@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 
 import { constants } from '../config/constants'
 const lang = constants.language
@@ -42,6 +41,17 @@ export default function Footer() {
               height={35}
               className="round"
               title={lang.footer.socialMedia.email}
+            />
+          </a>
+        </div><div className="image">
+          <a target="_blank" href={constants.profilesUrls.twitter}>
+            <Image
+              src={constants.icons.twitter}
+              alt="linkedin"
+              width={35}
+              height={35}
+              className="round"
+              title={lang.footer.socialMedia.twitter}
             />
           </a>
         </div>
