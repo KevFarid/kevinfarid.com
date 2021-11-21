@@ -21,7 +21,7 @@ export const constants = {
     download: 'https://i.imgur.com/UDseqVv.png',
   },
   imgs: {
-    heroBG: '/heroBG.jpg',
+    heroBG: '/heroBG.jpeg',
     about: 'https://i.imgur.com/K0VY5gf.png',
     ogImage: 'https://i.imgur.com/K0VY5gf.png',
   },
